@@ -1,0 +1,307 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, li, small {
+  font-family: 'Nunito', sans-serif;
+  color: #444;
+}
+
+p, h5, h6 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+small {
+  color: #fff;
+}
+
+i {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.col1, .col2, .col3, .col4, .col5 {
+  display: table;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.col1>p {
+  text-align: center;
+}
+
+.row2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.row5 {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.headline {
+  display: grid;
+  grid-template-columns: 3rem 2fr;
+  align-items: center;
+  justify-self: center;
+}
+
+.headline h3 {
+  color: #444;
+  font-family: 'Glegoo', serif;
+}
+
+.div_none, .div_white, .div_grey {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  z-index: 20;
+  position: relative;
+}
+
+.div_none {
+  background-color: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.div_none h3, .div_none h5 {
+  color: #fff;
+}
+
+.div_white {
+  background-color: #fff;
+}
+
+.div_grey {
+  background-color: #f7f7f7;
+}
+
+/** EDUCATION & WORK EXPERIENCE */
+.date {
+  font-size: 14px;
+  font-family: 'Poiret One', cursive;
+  color: #ff0055;
+}
+
+.content-box {
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  transition: all 0.2s ease 0s;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content-box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-size {
+  max-height: 11em;
+}
+
+.default-content {
+  transform: translateY(0px);
+  transition: all .75s ease;
+}
+
+.default-content.hidden {
+  transform: translateY(-300px);
+  transition: all .75s ease;
+  opacity: 0;
+}
+
+.show-description div {
+  height: 150px;
+}
+
+.show-description .description-box {
+  opacity: 1;
+}
+
+.description-box {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all .75s ease;
+}
+
+.description-box.visible {
+  opacity: 1;
+  transform: translateY(-150px);
+  transition: all .75s ease;
+}
+
+/** LANGUAGES */
+.progress-circles {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.circular-chart {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle {
+  fill: #f7f7f7;
+  stroke-width: 1;
+}
+
+.circle.animate {
+  stroke: #ff0055;
+  animation: progress 1.5s ease-out forwards;
+}
+
+text {
+  font: normal 0.2rem 'Poiret One', cursive;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/** SKILLS */
+#background {
+  background-image: url(../images/snow_forest.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+}
+
+.skill {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+.skill h5 {
+  width: 6rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.skill_bar {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.skill_circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.filled {
+  background: #ff0055;
+}
+
+.empty {
+  background: #f7f7f7;
+}
+
+/** INTERESTS */
+.div-img-outer {
+  width: 12rem;
+  height: 12rem;
+  margin: 25px;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#interest_1, #interest_2, #interest_3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+#interest_1 {
+  background-image: url(../images/hiking.png);
+}
+
+#interest_2 {
+  background-image: url(../images/snowboarding.png);
+}
+
+#interest_3 {
+  background-image: url(../images/biking.png);
+}
+
+#interest_1:hover, #interest_2:hover, #interest_3:hover {
+  transform: scale(1.3);
+  transition: all 1.3s;
+}
+
+@media only screen and (min-width: 920px) {
+  .col2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .col3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 4rem;
+  }
+
+  .col3>div {
+    display: table-cell;
+  }
+
+  .col4 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .col5 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .col6 {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+  }
+
+  .box-size {
+    max-height: 18em;
+  }
+
+  .circle.animate {
+    stroke: #ff0055;
+    animation: progress 3s ease-out forwards;
+  }
+
+
+}
