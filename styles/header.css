@@ -8,8 +8,9 @@
   top: 0;
   right: 0;
   width: 100%;
+  min-height: 1.2rem;
   transition: all 1s ease-in;
-  overflow: hidden;
+  /**overflow: hidden;*/
 }
 
 #topnav li {
