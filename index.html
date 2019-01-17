@@ -19,7 +19,7 @@
 <body>
 
   <ul class="menu responsive" id="topnav">
-    <li><a id="nav_home" href=#home>Home</a></li>
+    <li class="collapsed"><a id="nav_home" href=#home>Home</a></li>
     <li class="collapsed"><a id="nav_education" href=#education>Education</a></li>
     <li class="collapsed"><a id="nav_experience" href=#experience>Work Experience</a></li>
     <li class="collapsed"><a id="nav_languages" href=#languages>Languages</a></li>
@@ -62,6 +62,7 @@
               <h5>ISO Professional Services GmbH</h5>
               <p>Apprenticeship IT Specialist for Application Development</p>
               <p>| Frankfurt a.M., Germany</p>
+              <br>
             </div>
 
             <div class="description-box">
@@ -70,7 +71,7 @@
                 <li>Deploying software on client’s systems</li>
               </ul>
             </div>
-
+            <i class='fas fa-angle-down'></i>
           </div>
 
           <div class="content-box">
@@ -108,6 +109,8 @@
               <h5>Trainee Email Marketing & CRM</h5>
               <p>Chal-Tec GmbH</p>
               <p>| Berlin, Germany</p>
+              <br>
+              <br>
             </div>
 
             <div class="description-box">
@@ -116,6 +119,7 @@
                 <li>Optimized email content based on test results and analyses</li>
               </ul>
             </div>
+            <i class='fas fa-angle-down'></i>
           </div>
 
           <div class="content-box box-size">
@@ -132,7 +136,7 @@
                 <li>Exchanged information with internal departments and external partners on national and international level</li>
               </ul>
             </div>
-
+            <i class='fas fa-angle-down'></i>
           </div>
 
           <div class="content-box box-size">
@@ -141,6 +145,8 @@
               <h5>Rental Agent</h5>
               <p>Traveland RV Rentals</p>
               <p>| Vancouver Area, Canada</p>
+              <br>
+              <br>
             </div>
 
             <div class="description-box">
@@ -149,7 +155,7 @@
                 <li>Responsible for design of documents as well as for topicality and accuracy of website, manuals and brochures</li>
               </ul>
             </div>
-
+            <i class='fas fa-angle-down'></i>
           </div>
 
         </div>
@@ -165,31 +171,43 @@
         </div>
 
 
-        <div class="progress-circles">
-          <div class="col3 small-gap">
+        <div id="progress-circles">
+          <div id="language-animation" class="col3 small-gap">
 
             <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="bg-circle" d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831" />
               <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
-            a 15.9155 15.9155 0 0 1 0 31.831
-            a 15.9155 15.9155 0 0 1 0 -31.831" />
-              <text id="german" text-anchor="start" x="12" y="15">GERMAN</text>
-              <text id="german" text-anchor="start" x="14" y="20">100%</text>
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="12" y="15">GERMAN</text>
+              <text x="14" y="20" class="counter" data-count="100">0</text>
+              <text x="21" y="20">%</text>
             </svg>
 
             <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="bg-circle" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
               <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831" />
-              <text id="english" text-anchor="start" x="12.5" y="15">ENGLISH</text>
-              <text id="english" text-anchor="start" x="15" y="20">85%</text>
+              <text x="12.5" y="15">ENGLISH</text>
+              <text x="15" y="20" class="counter" data-count="85">0</text>
+              <text x="20" y="20">%</text>
             </svg>
 
             <svg viewBox="0 0 36 36" class="circular-chart">
+              <path class="bg-circle" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
               <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845
             a 15.9155 15.9155 0 0 1 0 31.831
             a 15.9155 15.9155 0 0 1 0 -31.831" />
-              <text id="french" text-anchor="start" x="12.5" y="15">FRENCH</text>
-              <text id="french" text-anchor="start" x="15" y="20">25%</text>
+              <text x="12.5" y="15">FRENCH</text>
+              <text x="15" y="20" class="counter" data-count="25">0</text>
+              <text x="20" y="20">%</text>
             </svg>
           </div>
 
@@ -216,9 +234,18 @@
         </div>
 
         <div class="skill">
+          <h5>CRM / E-Mail Marketing</h5>
+          <div class="skill_bar">
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle empty"></div>
+          </div>
+        </div>
 
+        <div class="skill">
           <h5>HTML & CSS</h5>
-
           <div class="skill_bar">
             <div class="skill_circle filled"></div>
             <div class="skill_circle filled"></div>
@@ -251,7 +278,40 @@
         </div>
 
         <div class="skill">
+          <h5>SQL</h5>
+          <div class="skill_bar">
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle empty"></div>
+            <div class="skill_circle empty"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h5>SoapUI / Webservices</h5>
+          <div class="skill_bar">
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle empty"></div>
+            <div class="skill_circle empty"></div>
+          </div>
+        </div>
+
+        <div class="skill">
           <h5>Javascript</h5>
+          <div class="skill_bar">
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle filled"></div>
+            <div class="skill_circle empty"></div>
+            <div class="skill_circle empty"></div>
+            <div class="skill_circle empty"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h5>Lucene</h5>
           <div class="skill_bar">
             <div class="skill_circle filled"></div>
             <div class="skill_circle filled"></div>
@@ -334,7 +394,7 @@
 
             <div class="address">
               <i class='far fa-envelope'></i>
-              <p><small class="">MAIL</small></p>
+              <p><small class="">E-MAIL</small></p>
               <p><small class="">martina.karbe@gmail.com</small></p>
             </div>
 

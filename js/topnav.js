@@ -48,7 +48,7 @@ class TopNav {
 
   onMobileMenuToggleClick() {
     $("a.mobile-menu-toggle").click(function(e) {
-      $("#topnav li:not(:nth-child(1)):not(:last-child)")
+      $("#topnav li:not(:nth-child(0)):not(:last-child)")
         .toggleClass("collapsed");
       e.eventDefault();
     })

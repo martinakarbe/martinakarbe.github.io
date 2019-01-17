@@ -146,8 +146,21 @@ i {
   transition: all .75s ease;
 }
 
+.fa-angle-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  transition: all 1s ease-in;
+}
+
+.content-box:hover .fa-angle-down {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
 /** LANGUAGES */
-.progress-circles {
+#progress-circles {
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
@@ -159,8 +172,14 @@ i {
   max-height: 250px;
 }
 
-.circle {
+.bg-circle {
   fill: #f7f7f7;
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.circle {
+  fill: none;
   stroke-width: 1;
 }
 
@@ -198,7 +217,7 @@ text {
 }
 
 .skill h5 {
-  width: 6rem;
+  width: 12rem;
   text-align: right;
   margin-right: 1rem;
 }
