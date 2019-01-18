@@ -2,7 +2,6 @@
 #topnav {
   z-index: 50;
   text-align: center;
-  padding: 1rem 1rem 1rem 0;
   margin: 0;
   position: fixed;
   top: 0;
@@ -10,101 +9,83 @@
   width: 100%;
   min-height: 1.2rem;
   transition: all 1s ease-in;
-  /**overflow: hidden;*/
 }
 
-#topnav li {
+#topnav a {
   display: grid;
   justify-content: center;
   padding: 0;
-}
-
-#topnav li a {
-  color: white;
   text-decoration: none;
 }
 
-#topnav.scrolling {
-  top: 0;
-  background-color: white;
-  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-  transition: all 1.5s ease-in;
-}
-
-#topnav.scrolling li a {
-  color: #444;
-}
-/**
-#topnav li a:hover {
-  color: #ddd !important;
-}
-
 @media screen and (max-width: 920px) {
-a.mobile-menu-toggle {
-  display: block;
-  position: absolute;
-  top: 9px;
-  right: 15px;
-  color: white;
-  z-index: 50;
-}
-
-#topnav li.collapsed {
-  display: none;
-}
-
-a.mobile-menu-toggle:hover .collapsed{
-  display: block;
-}
-
-}
-
-@media only screen and (min-width: 920px) {
-  #topnav li {
-    display: inline;
-    padding: 0 2rem 0 2rem;
-  }
-}
-*/
-
-a.mobile-menu-toggle {
-  position: absolute;
-  top: 9px;
-  right: 15px;
-  display: none;
-  color: white;
-  z-index: 50;
-}
-
-@media screen and (max-width: 920px) {
-  .menu.responsive {
-    position: relative;
-  }
-
-  .menu.responsive .mobile-menu-toggle {
-    position: absolute;
-    right: 1rem;
-  }
-
-  #topnav li.collapsed {
+  #topnav {
     display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 60;
   }
 
-  .menu.responsive li a {
-    float: none;
+  .dropdown:hover #topnav {
     display: block;
-    text-align: left;
+    background-color: #fff;
   }
 
-  a.mobile-menu-toggle {
+  #topnav a {
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
+    text-decoration: none;
+  }
+
+  #topnav a:hover {
+    background-color: #f7f7f7;
+  }
+
+  .dropbtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    top: 9px;
+    right: 15px;
+    color: white;
+    z-index: 60;
+  }
+
+  .dropbtn i {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown:hover .dropbtn i {
+    color: #bbb;
   }
 }
 
-@media only screen and (min-width: 920px) {
-  #topnav.responsive li {
+@media screen and (min-width: 920px) {
+  #topnav {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  #topnav.scrolling {
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 1s ease-in;
+  }
+
+  #topnav.scrolling a {
+    color: #444;
+  }
+
+  #topnav a {
     display: inline;
     padding: 0 2rem 0 2rem;
+  }
+
+  .dropbtn {
+    display: none;
   }
 }
 

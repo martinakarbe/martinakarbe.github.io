@@ -1,7 +1,7 @@
 class TopNav {
   constructor() {
     this.onScroll();
-    this.onMobileMenuToggleClick();
+    //  this.onMobileMenuToggleClick();
   }
 
   onScroll() {
@@ -15,33 +15,38 @@ class TopNav {
       const educationTop = $("#education").offset().top;
 
       if (windowTop >= interestsTop) {
-        $("#topnav li a").css('color', '#444');
+        $("#topnav a").css('color', '#444');
         $("#nav_interests").css('color', '#ff0055');
       } else if (windowTop >= skillsTop) {
-        $("#topnav li a").css('color', '#444');
+        $("#topnav a").css('color', '#444');
         $("#nav_skills").css('color', '#ff0055');
       } else if (windowTop >= languagesTop) {
-        $("#topnav li a").css('color', '#444');
+        $("#topnav a").css('color', '#444');
         $("#nav_languages").css('color', '#ff0055');
-      }  else if (windowTop >= experienceTop) {
-        $("#topnav li a").css('color', '#444');
+      } else if (windowTop >= experienceTop) {
+        $("#topnav a").css('color', '#444');
         $("#nav_experience").css('color', '#ff0055');
       } else if (windowTop >= educationTop) {
-        $("#topnav li a").css('color', '#444');
+        $("#topnav a").css('color', '#444');
         $("#nav_education").css('color', '#ff0055');
       } else {
-        $("#topnav li a").css('color', '#444');
+        $("#topnav a").css('color', '#444');
         $("#nav_home").css('color', '#ff0055');
       }
 
       const scrollOffsetTop = $("#topnav").offset().top;
       const topNavHeight = $("#topnav").height();
 
-      if ( scrollOffsetTop > topNavHeight) {
-        $("#topnav").addClass("scrolling");
-      } else {
-        $("#topnav").removeClass("scrolling");
-        $("#topnav li a").css('color', '#fff');
+      if ($(this).width() > 920) {
+
+
+        if (scrollOffsetTop > topNavHeight) {
+          $("#topnav").addClass("scrolling");
+        } else {
+          $("#topnav").removeClass("scrolling");
+          $("#topnav a").css('color', '#fff');
+        }
+
       }
     })
   }
