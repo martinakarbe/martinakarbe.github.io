@@ -142,7 +142,7 @@ i {
 
 .description-box.visible {
   opacity: 1;
-  transform: translateY(-150px);
+  transform: translateY(-11rem);
   transition: all .75s ease;
 }
 

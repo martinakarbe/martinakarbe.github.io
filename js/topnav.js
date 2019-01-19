@@ -6,13 +6,17 @@ class TopNav {
 
   onScroll() {
     $(window).scroll(function() {
+      const scrollOffsetTop = $("#topnav").offset().top;
+      const topNavHeight = $("#topnav").height();
 
       const windowTop = $(window).scrollTop();
-      const interestsTop = $("#interests").offset().top;
-      const skillsTop = $("#skills").offset().top;
-      const languagesTop = $("#languages").offset().top;
-      const experienceTop = $("#experience").offset().top;
-      const educationTop = $("#education").offset().top;
+      const interestsTop = $("#interests").offset().top - topNavHeight;
+      const skillsTop = $("#skills").offset().top - topNavHeight;
+      const languagesTop = $("#languages").offset().top - topNavHeight;
+      const experienceTop = $("#experience").offset().top - topNavHeight;
+      const educationTop = $("#education").offset().top - topNavHeight;
+
+
 
       if (windowTop >= interestsTop) {
         $("#topnav a").css('color', '#444');
@@ -34,19 +38,14 @@ class TopNav {
         $("#nav_home").css('color', '#ff0055');
       }
 
-      const scrollOffsetTop = $("#topnav").offset().top;
-      const topNavHeight = $("#topnav").height();
-
       if ($(this).width() > 920) {
-
 
         if (scrollOffsetTop > topNavHeight) {
           $("#topnav").addClass("scrolling");
         } else {
           $("#topnav").removeClass("scrolling");
           $("#topnav a").css('color', '#fff');
-        }
-
+        } 
       }
     })
   }

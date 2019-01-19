@@ -35,7 +35,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-decoration: none;
+    color: #444;
   }
 
   #topnav a:hover {
@@ -82,6 +82,7 @@
   #topnav a {
     display: inline;
     padding: 0 2rem 0 2rem;
+    color: #fff;
   }
 
   .dropbtn {

@@ -36,13 +36,20 @@ hr {
 
 .address {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.address p {
-  margin: 0;
+.address small {
+  display: block;
+  margin: 1em 0 0 0;
+}
+
+#copyright {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
 }
 
 .social-media {
