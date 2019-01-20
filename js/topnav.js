@@ -54,11 +54,6 @@ class TopNav {
 
     $('body').on('touchstart', function() {});
     //document.addEventListener("touchstart", function(){}, true);
-
-    //$(".dropbtn").on('touchstart', function(e) {
-      //  e.preventDefault();
-        //$("#topnav").toggleClass('hover');
-  //  });
   }
 
 }
