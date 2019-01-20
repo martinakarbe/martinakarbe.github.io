@@ -95,6 +95,9 @@ i {
   font-size: 14px;
   font-family: 'Poiret One', cursive;
   color: #ff0055;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
 }
 
 .content-box {
@@ -112,7 +115,7 @@ i {
 }
 
 .box-size {
-  max-height: 11em;
+  max-height: 14em;
 }
 
 .default-content {
@@ -140,9 +143,10 @@ i {
   transition: all .75s ease;
 }
 
+
 .description-box.visible {
   opacity: 1;
-  transform: translateY(-11rem);
+  transform: translateY(-100%);
   transition: all .75s ease;
 }
 
@@ -163,6 +167,20 @@ i {
 #progress-circles {
   display: grid;
   grid-template-columns: repeat(3, auto);
+}
+
+@media only screen and (max-width: 670px) {
+  #progress-circles {
+    display: block;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  #language-animation {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .circular-chart {

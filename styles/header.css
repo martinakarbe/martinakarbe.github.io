@@ -124,8 +124,12 @@ header p {
   display: grid;
   justify-content: center;
   grid-template-rows: repeat(2, auto);
-  margin-top: 40%;
-  margin-bottom: 40%;
+  padding: 5%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5%;
 }
 
 .profile-picture {

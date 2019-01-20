@@ -1,7 +1,7 @@
 class TopNav {
   constructor() {
     this.onScroll();
-    //  this.onMobileMenuToggleClick();
+    this.onMobileMenuHover();
   }
 
   onScroll() {
@@ -45,17 +45,19 @@ class TopNav {
         } else {
           $("#topnav").removeClass("scrolling");
           $("#topnav a").css('color', '#fff');
-        } 
+        }
       }
     })
   }
 
-  onMobileMenuToggleClick() {
-    $("a.mobile-menu-toggle").click(function(e) {
-      $("#topnav li:not(:nth-child(0)):not(:last-child)")
-        .toggleClass("collapsed");
-      e.eventDefault();
-    })
+  onMobileMenuHover() {
+
+    $('body').on('touchstart', function() {});
+
+    //$(".dropbtn").on('touchstart', function(e) {
+      //  e.preventDefault();
+        //$("#topnav").toggleClass('hover');
+  //  });
   }
 
 }
