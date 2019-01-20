@@ -26,9 +26,12 @@
     z-index: 60;
   }
 
-  .dropdown:hover #topnav {
+  .dropdown:hover #topnav,
+  .dropdown:active #topnav  {
     display: block;
     background-color: #fff;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 
   #topnav a {
@@ -38,8 +41,11 @@
     color: #444;
   }
 
-  #topnav a:hover {
+  #topnav a:hover,
+  #topnav a:active {
     background-color: #f7f7f7;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 
   .dropbtn {
@@ -58,8 +64,11 @@
     display: inline-block;
   }
 
-  .dropdown:hover .dropbtn i {
+  .dropdown:hover .dropbtn i,
+  .dropdown:active .dropbtn i  {
     color: #bbb;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 }
 
@@ -124,12 +133,12 @@ header p {
   display: grid;
   justify-content: center;
   grid-template-rows: repeat(2, auto);
-  padding: 5%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   margin-top: 5%;
+  padding: 5%;
 }
 
 .profile-picture {

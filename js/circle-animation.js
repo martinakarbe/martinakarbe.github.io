@@ -7,6 +7,8 @@ class CircleAnimation {
     const languagesOffsetBottom = $("#language-animation").offset().top +
       $("#language-animation").height();
 
+
+
     $(window).scroll(function() {
       const currentScrollOffset = $(window).height() + $(window).scrollTop();
 

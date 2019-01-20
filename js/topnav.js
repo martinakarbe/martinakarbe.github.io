@@ -53,6 +53,7 @@ class TopNav {
   onMobileMenuHover() {
 
     $('body').on('touchstart', function() {});
+    //document.addEventListener("touchstart", function(){}, true);
 
     //$(".dropbtn").on('touchstart', function(e) {
       //  e.preventDefault();

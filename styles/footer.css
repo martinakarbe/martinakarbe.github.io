@@ -66,6 +66,9 @@ hr {
   top: calc(25%);
 }
 
-.social-media:hover {
+.social-media:hover,
+.social-media:active {
   background-color: #777;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }

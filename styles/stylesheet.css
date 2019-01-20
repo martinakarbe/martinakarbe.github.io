@@ -110,8 +110,11 @@ i {
   overflow: hidden;
 }
 
-.content-box:hover {
+.content-box:hover,
+.content-box:active {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .box-size {
@@ -158,9 +161,12 @@ i {
   transition: all 1s ease-in;
 }
 
-.content-box:hover .fa-angle-down {
+.content-box:hover .fa-angle-down,
+.content-box:active .fa-angle-down {
   opacity: 0;
   transition: all .5s ease;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /** LANGUAGES */
@@ -295,9 +301,12 @@ text {
   background-image: url(../images/biking.png);
 }
 
-#interest_1:hover, #interest_2:hover, #interest_3:hover {
+#interest_1:hover, #interest_2:hover, #interest_3:hover,
+#interest_1:active, #interest_2:active, #interest_3:active {
   transform: scale(1.3);
   transition: all 1.3s;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 @media only screen and (min-width: 920px) {
