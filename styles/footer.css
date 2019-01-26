@@ -26,7 +26,9 @@ footer i {
 
 footer .col2 {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: repeat(2, auto);
 }
 
 hr {
@@ -36,7 +38,9 @@ hr {
 
 .address {
   display: grid;
+  display: -ms-grid;
   grid-template-rows: repeat(3, auto);
+  -ms-grid-rows: repeat(3, auto);
   text-align: center;
   margin-bottom: 2rem;
 }
