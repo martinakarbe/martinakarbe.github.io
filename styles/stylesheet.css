@@ -209,14 +209,11 @@ i {
   -webkit-touch-callout: none;
 }
 
-#language-animation {
-  width: 100vh;
-}
-
 /** LANGUAGES */
 
 @media only screen and (min-width: 920px) {
   #language-animation {
+    width: 100vh;
     display: grid;
     display: -ms-grid;
     grid-template-columns: repeat(3, auto);
